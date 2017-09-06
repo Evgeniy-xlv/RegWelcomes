@@ -5,6 +5,7 @@ import fr.skytasul.music.MusicInventory;
 import fr.skytasul.music.MusicMain;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.World;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -166,7 +167,7 @@ public class RegWelcomes extends JavaPlugin {
         RegionData reg = regData.get(region);
         if(reg == null) return;
         if(reg.soundName != null){
-            player.playSound(player.getLocation(), reg.soundName, 1, 1);
+            player.playSound(player.getLocation(), Sound.valueOf(reg.soundName), 1, 1);
         }
     }
 
