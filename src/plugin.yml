@@ -1,0 +1,9 @@
+name: RegWelcomes
+main: ru.xlv.regwelcomes.RegWelcomes
+version: 1.0
+author: Xlv
+desription: Plugin for different messages when player moves between regions.
+depend: [WorldGuard]
+commands:
+  regwelcomes:
+    aliases: [rw]
